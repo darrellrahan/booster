@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Intro from "./components/Intro";
+import Marquee from "./components/Marquee";
 import MobileNavbar from "./components/MobileNavbar";
 import Service from "./components/Service";
 import StudyCase from "./components/StudyCase";
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <MobileNavbar />
       <Hero />
+      <Marquee />
       <Intro />
       <WhyNeedUs />
       <StudyCase />
