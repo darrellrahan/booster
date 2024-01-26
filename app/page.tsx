@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Intro from "./components/Intro";
 import Marquee from "./components/Marquee";
 import MobileNavbar from "./components/MobileNavbar";
+import Project from "./components/Project";
 import Service from "./components/Service";
 import StudyCase from "./components/StudyCase";
 import WhyNeedUs from "./components/WhyNeedUs";
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyNeedUs />
       <StudyCase />
       <Service />
+      <Project />
     </>
   );
 }

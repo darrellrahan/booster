@@ -2,34 +2,36 @@ import React from "react";
 
 function Intro() {
   return (
-    <section id="intro" className="p-16 h-screen flex items-center">
-      <div className="grid grid-cols-2 w-full">
+    <section
+      id="intro"
+      className="px-8 py-24 lg:px-16 lg:py-32 text-left lg:text-center"
+    >
+      <div className="space-y-4 mb-16 lg:mb-24">
+        <h4 className="text-[#2281D5] font-medium">INTRODUCING</h4>
+        <h1 className="text-3xl font-medium">Welcome to Booster Indonesia</h1>
+        <p className="text-xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div className="flex gap-12 lg:gap-20 lg:justify-center flex-wrap">
         <div>
-          <h4 className="mb-4">Introducing</h4>
-          <h1 className="text-3xl font-medium">Welcome to Booster Indonesia</h1>
+          <h3 className="font-medium text-3xl lg:text-6xl font-medium mb-2">
+            50+
+          </h3>
+          <h4>magna aliqua</h4>
         </div>
-        <div className="space-y-12">
-          <h1 className="text-3xl font-medium">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h1>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-          </p>
-          <div className="flex gap-12">
-            <div>
-              <h3 className="font-medium text-3xl font-medium mb-1">50+</h3>
-              <h4>magna aliqua</h4>
-            </div>
-            <div>
-              <h3 className="font-medium text-3xl font-medium mb-1">100+</h3>
-              <h4>magna aliqua</h4>
-            </div>
-            <div>
-              <h3 className="font-medium text-3xl font-medium mb-1">200+</h3>
-              <h4>magna aliqua</h4>
-            </div>
-          </div>
+        <div>
+          <h3 className="font-medium text-3xl lg:text-6xl font-medium mb-2">
+            100+
+          </h3>
+          <h4>magna aliqua</h4>
+        </div>
+        <div>
+          <h3 className="font-medium text-3xl lg:text-6xl font-medium mb-2">
+            200+
+          </h3>
+          <h4>magna aliqua</h4>
         </div>
       </div>
     </section>

@@ -1,44 +1,42 @@
-import Image from "next/image";
 import React from "react";
 
 function StudyCase() {
   return (
-    <section id="study-case" className="px-16 pt-32 pb-48">
-      <h1 className="text-center text-4xl font-bold leading-snug mb-60">
-        Anyone can do it!
-        <br />
-        Try it yourself, right now.
+    <section id="study-case" className="px-8 py-24 lg:px-16 lg:py-32">
+      <h4 className="text-[#2281D5] font-medium mb-4">CASE STUDIES</h4>
+      <h1 className="text-3xl font-medium mb-16">
+        Lorem Ipsum Dorol Sit Amet.
       </h1>
-      <div className="h-[500px] bg-[#017EF9] rounded-[30px] flex items-center justify-center relative">
-        <h3 className="text-white text-4xl font-medium">STUDY CASE</h3>
-        <div className="absolute left-32 -top-32 h-[280px] w-[325px] rounded-[10px] border border-[#7c7c7c4c] bg-white shadow-[0px_4px_4px_0px_rgba(1,126,249,0.30)] flex flex-col justify-center gap-6 p-6">
-          <div className="flex justify-between items-center gap-6">
-            <h4 className="text-[22px] font-medium">Merek Tidak Dikenal</h4>
-            <Image src="/sc-1.svg" alt="icon" width={65} height={65} priority />
-          </div>
-          <p>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <div className="space-y-4">
+          <h3 className="flex gap-3 text-xl font-semibold lg:text-2xl">
+            <span className="text-[#7c7c7c]">01.</span>
+            <span>Merek Tidak Dikenal</span>
+          </h3>
+          <hr className="border-2 border-[#2281D5]" />
+          <p className="lg:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div className="absolute right-32 -top-32 h-[280px] w-[325px] rounded-[10px] border border-[#7c7c7c4c] bg-white shadow-[0px_4px_4px_0px_rgba(1,126,249,0.30)] flex flex-col justify-center gap-6 p-6">
-          <div className="flex justify-between items-center gap-6">
-            <h4 className="text-[22px] font-medium">
-              Tidak Memiliki Konsumen Loyal
-            </h4>
-            <Image src="/sc-2.svg" alt="icon" width={65} height={65} priority />
-          </div>
-          <p>
+        <div className="space-y-4">
+          <h3 className="flex gap-3 text-xl font-semibold lg:text-2xl">
+            <span className="text-[#7c7c7c]">02.</span>
+            <span>Merek Susah Berkembang</span>
+          </h3>
+          <hr className="border-2 border-[#2281D5]" />
+          <p className="lg:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div className="absolute inset-x-1/2 -translate-x-1/2 -bottom-32 h-[280px] w-[325px] rounded-[10px] border border-[#7c7c7c4c] bg-white shadow-[0px_4px_4px_0px_rgba(1,126,249,0.30)] flex flex-col justify-center gap-6 p-6">
-          <div className="flex justify-between items-center gap-6">
-            <h4 className="text-[22px] font-medium">Merek Susah Berkembang</h4>
-            <Image src="/sc-3.svg" alt="icon" width={65} height={65} priority />
-          </div>
-          <p>
+        <div className="space-y-4">
+          <h3 className="flex gap-3 text-xl font-semibold lg:text-2xl">
+            <span className="text-[#7c7c7c]">03.</span>
+            <span>Konsumen Tidak Loyal</span>
+          </h3>
+          <hr className="border-2 border-[#2281D5]" />
+          <p className="lg:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
