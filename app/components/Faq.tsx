@@ -113,6 +113,7 @@ function Faq() {
         width={500}
         height={500}
         className="lg:w-[500px] lg:h-[500px]"
+        priority
       />
       <div className="mt-16 lg:mt-0 lg:w-[800px]">
         <h4 className="text-[#2281D5] font-medium mb-4">FAQ</h4>

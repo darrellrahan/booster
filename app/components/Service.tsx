@@ -13,7 +13,13 @@ function Service() {
             </h3>
             <h4 className="text-lg">(Exclusive partnership with IPINDO)</h4>
           </div>
-          <Image src="/service-1.svg" alt="booster" width={550} height={380} />
+          <Image
+            src="/service-1.svg"
+            alt="booster"
+            width={550}
+            height={380}
+            priority
+          />
         </div>
         <div>
           <h3 className="font-medium text-xl lg:text-3xl leading-relaxed mb-4 lg:mb-8">
@@ -37,7 +43,13 @@ function Service() {
           <h3 className="text-4xl font-medium mb-8 lg:mb-12">
             <span className="text-[#017EF9]">Web</span>Booster
           </h3>
-          <Image src="/service-2.svg" alt="booster" width={550} height={380} />
+          <Image
+            src="/service-2.svg"
+            alt="booster"
+            width={550}
+            height={380}
+            priority
+          />
         </div>
         <div>
           <h3 className="font-medium text-xl lg:text-3xl leading-relaxed mb-4 lg:mb-8">

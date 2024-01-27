@@ -33,6 +33,7 @@ function Hero() {
             <CaretDoubleDown size={32} />
           </div>
           <Image
+            priority
             src="/cta-hero.svg"
             alt="cta"
             width={130}
