@@ -17,10 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <TogglerProvider>
-      <html lang="en">
-        <body
-          className={`${archivo.className} overflow-x-hidden text-[#354150]`}
-        >
+      <html lang="en" className="scroll-smooth">
+        <body className={`${archivo.className} text-[#354150]`}>
           {children}
         </body>
       </html>

@@ -2,6 +2,7 @@
 
 import { CaretDoubleDown, TrendUp } from "@phosphor-icons/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -28,7 +29,10 @@ function Hero() {
             </p>
           </div>
         </div>
-        <button className="absolute inset-x-1/2 -translate-x-1/2 bottom-8 w-[130px] h-[130px]">
+        <a
+          href="#intro"
+          className="absolute inset-x-1/2 -translate-x-1/2 bottom-8 w-[130px] h-[130px]"
+        >
           <div className="w-[80px] h-[80px] rounded-full bg-[#2281D5] absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 text-white flex items-center justify-center">
             <CaretDoubleDown size={32} />
           </div>
@@ -40,7 +44,7 @@ function Hero() {
             height={130}
             className="animate-spin-slow"
           />
-        </button>
+        </a>
       </div>
     </section>
   );
