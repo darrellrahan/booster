@@ -31,7 +31,7 @@ function Hero() {
         </div>
         <a
           href="#intro"
-          className="absolute inset-x-1/2 -translate-x-1/2 bottom-8 w-[130px] h-[130px]"
+          className="absolute inset-x-1/2 -translate-x-1/2 bottom-12 w-[130px] h-[130px]"
         >
           <div className="w-[80px] h-[80px] rounded-full bg-[#2281D5] absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 text-white flex items-center justify-center">
             <CaretDoubleDown size={32} />

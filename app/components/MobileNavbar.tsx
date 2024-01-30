@@ -2,7 +2,6 @@
 
 import { X } from "@phosphor-icons/react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { useTogglerContext } from "../context/toggler";
 
@@ -23,28 +22,70 @@ function MobileNavbar() {
         </button>
       </div>
       <div className="flex flex-col gap-8 font-bold text-xl">
-        <Link href="/" className="border-b-2 border-[#354150] text-center pb-4">
+        <button
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            setMobileNavbar(false);
+          }}
+          className="border-b-2 border-[#354150] text-center pb-4"
+        >
           Home
-        </Link>
-        <Link href="/" className="border-b-2 border-[#354150] text-center pb-4">
+        </button>
+        <a
+          href="#intro"
+          className="border-b-2 border-[#354150] text-center pb-4"
+          onClick={() => {
+            setMobileNavbar(false);
+          }}
+        >
           About Us
-        </Link>
-        <Link href="/" className="border-b-2 border-[#354150] text-center pb-4">
-          Case Studies
-        </Link>
-        <Link href="/" className="border-b-2 border-[#354150] text-center pb-4">
+        </a>
+        <a
+          href="#why-need-us"
+          className="border-b-2 border-[#354150] text-center pb-4"
+          onClick={() => {
+            setMobileNavbar(false);
+          }}
+        >
+          Our Value
+        </a>
+        <a
+          href="#service"
+          className="border-b-2 border-[#354150] text-center pb-4"
+          onClick={() => {
+            setMobileNavbar(false);
+          }}
+        >
           Service
-        </Link>
-        <Link href="/" className="border-b-2 border-[#354150] text-center pb-4">
+        </a>
+        <a
+          href="#project"
+          className="border-b-2 border-[#354150] text-center pb-4"
+          onClick={() => {
+            setMobileNavbar(false);
+          }}
+        >
           Project
-        </Link>
-        <Link href="/" className="border-b-2 border-[#354150] text-center pb-4">
+        </a>
+        <a
+          href="#faq"
+          className="border-b-2 border-[#354150] text-center pb-4"
+          onClick={() => {
+            setMobileNavbar(false);
+          }}
+        >
           FAQ
-        </Link>
+        </a>
       </div>
-      <button className="w-full py-3 text-lg bg-[#2281D5] text-center rounded-md text-white">
+      <a
+        href="#footer"
+        className="w-full py-3 text-lg bg-[#2281D5] text-center rounded-md text-white"
+        onClick={() => {
+          setMobileNavbar(false);
+        }}
+      >
         Contact us
-      </button>
+      </a>
     </section>
   );
 }

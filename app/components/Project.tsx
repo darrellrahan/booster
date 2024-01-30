@@ -70,7 +70,7 @@ function Project() {
               width={500}
               height={280}
               priority
-              className="w-full"
+              className="w-full rounded-[10px]"
             />
             <div className="mt-7 mb-3 flex gap-2 items-center">
               <Image
@@ -98,7 +98,7 @@ function Project() {
               width={500}
               height={280}
               priority
-              className="w-full"
+              className="w-full rounded-[10px]"
             />
             <div className="mt-7 mb-3 flex gap-2 items-center">
               <Image
@@ -126,7 +126,7 @@ function Project() {
               width={500}
               height={280}
               priority
-              className="w-full"
+              className="w-full rounded-[10px]"
             />
             <div className="mt-7 mb-3 flex gap-2 items-center">
               <Image
@@ -154,7 +154,7 @@ function Project() {
               width={500}
               height={280}
               priority
-              className="w-full"
+              className="w-full rounded-[10px]"
             />
             <div className="mt-7 mb-3 flex gap-2 items-center">
               <Image
@@ -182,7 +182,7 @@ function Project() {
               width={500}
               height={280}
               priority
-              className="w-full"
+              className="w-full rounded-[10px]"
             />
             <div className="mt-7 mb-3 flex gap-2 items-center">
               <Image
@@ -210,7 +210,7 @@ function Project() {
               width={500}
               height={280}
               priority
-              className="w-full"
+              className="w-full rounded-[10px]"
             />
             <div className="mt-7 mb-3 flex gap-2 items-center">
               <Image

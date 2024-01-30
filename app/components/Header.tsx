@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { useTogglerContext } from "../context/toggler";
@@ -36,9 +35,9 @@ function Header() {
       id="header"
       className={`${style} fixed inset-x-0 top-0 z-40 px-8 lg:px-16 flex items-center justify-between duration-300 ease-linear text-lg font-medium`}
     >
-      <Link href="/">
+      <a href="/">
         <Image src="/logo.svg" alt="logo" width={175} height={50} priority />
-      </Link>
+      </a>
       <button
         onClick={() => setMobileNavbar(true)}
         className="text-[2.75rem] lg:hidden"
@@ -46,48 +45,51 @@ function Header() {
         <RiMenu3Fill />
       </button>
       <div className="lg:flex gap-8 hidden">
-        <Link
-          href="/"
+        <button
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
           className={`relative after:absolute after:-bottom-[2px] hover:after:w-full after:inset-x-0 after:w-0 after:h-[1.5px] ${afterBg} after:duration-300 after:ease-linear`}
         >
           Home
-        </Link>
-        <Link
-          href="/"
+        </button>
+        <a
+          href="#intro"
           className={`relative after:absolute after:-bottom-[2px] hover:after:w-full after:inset-x-0 after:w-0 after:h-[1.5px] ${afterBg} after:duration-300 after:ease-linear`}
         >
           About Us
-        </Link>
-        <Link
-          href="/"
+        </a>
+        <a
+          href="#why-need-us"
           className={`relative after:absolute after:-bottom-[2px] hover:after:w-full after:inset-x-0 after:w-0 after:h-[1.5px] ${afterBg} after:duration-300 after:ease-linear`}
         >
-          Case Studies
-        </Link>
-        <Link
-          href="/"
+          Our Value
+        </a>
+        <a
+          href="#service"
           className={`relative after:absolute after:-bottom-[2px] hover:after:w-full after:inset-x-0 after:w-0 after:h-[1.5px] ${afterBg} after:duration-300 after:ease-linear`}
         >
           Service
-        </Link>
-        <Link
-          href="/"
+        </a>
+        <a
+          href="#project"
           className={`relative after:absolute after:-bottom-[2px] hover:after:w-full after:inset-x-0 after:w-0 after:h-[1.5px] ${afterBg} after:duration-300 after:ease-linear`}
         >
           Project
-        </Link>
-        <Link
-          href="/"
+        </a>
+        <a
+          href="#faq"
           className={`relative after:absolute after:-bottom-[2px] hover:after:w-full after:inset-x-0 after:w-0 after:h-[1.5px] ${afterBg} after:duration-300 after:ease-linear`}
         >
           FAQ
-        </Link>
+        </a>
       </div>
-      <button
+      <a
+        href="#footer"
         className={`rounded-[30px] bg-transparent border-[1.75px] ${border} px-6 py-2 hidden lg:inline-block`}
       >
         Contact Us
-      </button>
+      </a>
     </section>
   );
 }
